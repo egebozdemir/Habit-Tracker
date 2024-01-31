@@ -15,11 +15,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Log into registry
-        run: docker login -u egebozdemir -p kvY#FvF^J7UjX3-
-
       - name: Log in to Github Container Registry
         uses: docker/login-action@v2
+        run: |
+          "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
