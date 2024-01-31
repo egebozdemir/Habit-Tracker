@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ env.REGISTRY }}/${{ env.REPO_OWNER }}/habit-tracker
+          images: ${{ env.REGISTRY }}/${{ env.REPO_OWNER }}/Habit-Tracker
 
       - name: Build and push
         uses: docker/build-push-action@v4
