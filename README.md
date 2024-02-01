@@ -3,7 +3,7 @@ Spring Boot Framework Demo Project
 <br><br>
 ![appRunOnDockerImageCreatedWithinGithubAction_HabitTracker](https://github.com/egebozdemir/Habit-Tracker/assets/56095796/e0e163e6-eea7-4abe-accd-088543119613)
 <br><br>
-Basic REST application in Spring Boot which generates the HTTP request that performs CRUD operations on the JSON data.<br> Dockerized and published within github workflow
+Basic REST application in Spring Boot which generates the HTTP request that performs CRUD operations on the JSON data. Dockerized and published within github workflow
 <br><br>
 ### :running: How to Run: <br>
 ```console
@@ -24,7 +24,7 @@ Basic REST application in Spring Boot which generates the HTTP request that perf
  curl -H "Content-Type: application/json" -X POST http://localhost:8080/habits -d "{\"name\": \"brush teeth\"}"<br>
 ```
 <br><br>
-### :arrow_forward: Example Activity Requests (creating a record that you've done the relevant activity for a habit):<br>
+### :arrow_forward: Example Activity Requests (creating an activity related to a habit):<br>
 ```console
  curl -H "Content-Type: application/json" -X POST http://localhost:8080/activities -d "{\"habitId\": \"1\"}"<br>
 ```
