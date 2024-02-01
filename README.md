@@ -3,7 +3,7 @@ Spring Boot Framework Demo Project
 <br><br>
 ![appRunOnDockerImageCreatedWithinGithubAction_HabitTracker](https://github.com/egebozdemir/Habit-Tracker/assets/56095796/e0e163e6-eea7-4abe-accd-088543119613)
 <br><br>
-Basic REST application in Spring Boot which generates the HTTP request that performs CRUD operations on the JSON data. Dockerized and published within github workflow
+Basic REST application in Java - Spring Boot which generates the HTTP request that performs CRUD operations on the JSON data. Dockerized and published within github workflow
 <br><br>
 ### :running: How to Run: <br>
 ```console
@@ -36,5 +36,3 @@ Basic REST application in Spring Boot which generates the HTTP request that perf
 > Go to "localhost:8080/h2-console" in your browser after the application stands up<br>
 > Credentials are in "/src/main/resources/application.properties"<br>
 
-<br><br>
-:point_right: Credits: @huseyinbabal 
