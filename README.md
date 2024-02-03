@@ -7,29 +7,29 @@ Basic REST application in Java - Spring Boot which generates the HTTP request th
 <br><br>
 ### :running: How to Run: <br>
 ```console
- docker pull ghcr.io/egebozdemir/habit-tracker:main<br>
+ docker pull ghcr.io/egebozdemir/habit-tracker:main
 ```
 ```console
- docker run -p 8080:8080 ghcr.io/egebozdemir/habit-tracker:main<br>
+ docker run -p 8080:8080 ghcr.io/egebozdemir/habit-tracker:main
 ```
 <br><br>
 ### :arrow_forward: Example Habit Request (creating a new habit):<br>
 ```console
- curl -H "Content-Type: application/json" -X POST http://localhost:8080/habits -d "{\"name\": \"make the bed\"}"<br>
+ curl -H "Content-Type: application/json" -X POST http://localhost:8080/habits -d "{\"name\": \"make the bed\"}"
 ```
 ```console
- curl -H "Content-Type: application/json" -X POST http://localhost:8080/habits -d "{\"name\": \"walk the dog\"}"<br>
+ curl -H "Content-Type: application/json" -X POST http://localhost:8080/habits -d "{\"name\": \"walk the dog\"}"
 ```
 ```console
- curl -H "Content-Type: application/json" -X POST http://localhost:8080/habits -d "{\"name\": \"brush teeth\"}"<br>
+ curl -H "Content-Type: application/json" -X POST http://localhost:8080/habits -d "{\"name\": \"brush teeth\"}"
 ```
 <br><br>
 ### :arrow_forward: Example Activity Requests (creating an activity related to a habit):<br>
 ```console
- curl -H "Content-Type: application/json" -X POST http://localhost:8080/activities -d "{\"habitId\": \"1\"}"<br>
+ curl -H "Content-Type: application/json" -X POST http://localhost:8080/activities -d "{\"habitId\": \"1\"}"
 ```
 ```console
- curl -H "Content-Type: application/json" -X POST http://localhost:8080/activities -d "{\"habitId\": \"2\"}"<br>
+ curl -H "Content-Type: application/json" -X POST http://localhost:8080/activities -d "{\"habitId\": \"2\"}"
 ```
 <br><br>
 ### :bulb: To Check created DB Records (H2 in-memory db)<br>
